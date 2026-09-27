@@ -1,0 +1,8 @@
+type,value,description,confidence,evidence
+Observed Source,172.16.0.1,"PCAP상 SYN 다발과 높은 목적지 포트 다양성이 관찰된 Source이며 실제 외부 공격자 주소로 단정하지 않음",High,E04;E05
+Destination,192.168.10.50,"관찰된 SYN 포트 탐색의 집중 대상",High,E06;E10
+Open Port,21,"SYN/ACK 응답으로 확인된 열린 TCP 포트 후보; 서비스 버전과 취약점은 확인하지 않음",Medium,E11;E13
+Open Port,22,"SYN/ACK 응답으로 확인된 열린 TCP 포트 후보; 22번 포트에서 SYN/ACK 후 RST 패턴도 확인됨",Medium,E11;E13;E14
+Open Port,80,"SYN/ACK 응답으로 확인된 열린 TCP 포트 후보; 서비스 버전과 취약점은 확인하지 않음",Medium,E11;E13
+Open Port,139,"SYN/ACK 응답으로 확인된 열린 TCP 포트 후보; 서비스 버전과 취약점은 확인하지 않음",Medium,E11;E13
+Open Port,445,"SYN/ACK 응답으로 확인된 열린 TCP 포트 후보; 서비스 버전과 취약점은 확인하지 않음",Medium,E11;E13

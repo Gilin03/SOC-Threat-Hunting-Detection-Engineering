@@ -1,0 +1,17 @@
+# Packet capture files
+*.pcap
+*.pcapng
+*.cap
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
+
+템플릿활용프롬프트

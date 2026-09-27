@@ -1,0 +1,13 @@
+type,value,description,first_seen,last_seen,confidence
+ip,170.64.203.74,"SSH login 448건, 약 35개 Username·177개 Password·446개 Credential pair가 관찰된 자동화 Credential Guessing 후보. exec_command는 확인되지 않음.",2025-09-12T14:28:57.417769,2025-09-12T16:55:22.380860,High
+ip,47.251.118.172,"동일 Session에서 root Credential 입력 이후 외부 리소스 요청·저장·실행 시도 명령이 관찰된 Source. 성공 여부는 확인하지 않음.",2025-09-07T08:39:05.484958,2025-09-07T08:39:07.123850,High
+ip,8.210.252.89,"/dev/tcp 명령에서 참조된 외부 대상 IP. 연결 성공 여부는 확인하지 않음.",2025-09-07T08:39:07.020032,2025-09-07T08:39:07.020032,Medium
+port,60147,"의심 Session의 /dev/tcp 외부 대상 Port. 연결 성공 여부는 확인하지 않음.",2025-09-07T08:39:07.020032,2025-09-07T08:39:07.020032,Medium
+username,root,"exec_command가 발생한 16개 Session에서 입력된 Username. 실제 운영 계정 유효성은 확인하지 않음.",2025-07-27T07:17:28.136505,2025-09-12T11:18:49.348863,Medium
+credential,root/test,"Honeypot에서 관찰된 Credential 입력값이며 11개 exec Session에서 확인됨. 실제 운영 Credential 유효성은 확인하지 않음.",2025-07-27T07:17:28.136505,2025-09-12T11:18:49.348863,Medium
+credential,root/123456,"의심 Session에서 관찰된 Honeypot Credential 입력값. 실제 root 계정 탈취를 의미하지 않음.",2025-09-07T08:39:06.248271,2025-09-07T08:39:06.248271,Medium
+path,/linux,"외부 대상에 요청한 Resource 경로. 다운로드 성공 여부는 확인하지 않음.",2025-09-07T08:39:07.020032,2025-09-07T08:39:07.020032,Medium
+path,/tmp,"외부 Resource 또는 파일을 저장·처리하려는 명령에서 관찰된 경로 패턴.",2025-07-30T11:41:56.336481,2025-09-07T08:39:07.123850,Low
+command_pattern,/dev/tcp,"Shell 명령에서 외부 TCP 연결에 사용된 패턴. 연결 성공 여부는 확인하지 않음.",2025-09-07T08:39:07.020032,2025-09-07T08:39:07.020032,High
+command_pattern,chmod +x,"저장 경로의 파일에 실행 권한을 부여하려는 명령 패턴.",2025-09-07T08:39:07.020032,2025-09-07T08:39:07.020032,High
+command_pattern,nohup bash,"백그라운드 Shell 실행에 사용된 명령 패턴.",2025-09-07T08:39:07.020032,2025-09-07T08:39:07.020032,High
